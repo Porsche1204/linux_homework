@@ -1,0 +1,6 @@
+#!/bin/sh
+
+gcc -c *.c
+gcc -o client1 client1.o
+gcc -o server1 server1.o
+rm *.o

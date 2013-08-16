@@ -1,0 +1,14 @@
+#!/bin/sh
+IFS='-'
+echo '$PATH' now is $PATH
+echo 'HOME' now is $HOME
+echo 'PS1' now is $PS1
+echo 'PS2' now is $PS2
+echo 'IFS' now is $IFS
+echo '$0' now is $0
+echo '$#' now is $#
+echo '$$' now is $$
+echo '$*' now is $*
+echo '$@' now is $@
+
+exit 0

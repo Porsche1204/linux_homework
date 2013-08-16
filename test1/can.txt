@@ -1,0 +1,12 @@
+Binary file test1/fred.o matches
+test1/lib.h:void bill(char *);
+test1/lib.h:void fred(int);
+test1/fred.c:#include<stdio.h>
+test1/fred.c:void fred(int arg)
+test1/program.c:	bill("Hello World !");
+Binary file test1/libfoo.a matches
+Binary file test1/program.o matches
+Binary file test1/program matches
+Binary file test1/bill.o matches
+test1/bill.c:#include<stdio.h>
+test1/bill.c:void bill(char *arg)
