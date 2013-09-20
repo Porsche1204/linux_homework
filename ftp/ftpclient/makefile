@@ -1,6 +1,10 @@
-main: main.o
-	gcc -o main main.o
-main.o: main.c
-	gcc -c main.c
+myftp: main.o readfile.o stringtool.o
+	gcc -o $@ main.o readfile.o stringtool.o
+main.o: main.c 
+	gcc -c $^
+readfile.o: c/readfile.c 
+	gcc -c $^
+stringtool.o: c/stringtool.c
+	gcc -c $^
 clean:
-	main.o
+	rm *.o

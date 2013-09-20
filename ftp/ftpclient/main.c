@@ -2,35 +2,12 @@
 #include<stdlib.h>
 #include<sys/stat.h>
 #include<string.h>
-
-char *cmd[4];
-char* GetCmd(char *argv)
-{
-	char *temp;
-	char *delim = ":@";
-	int num = 0;
-	temp = strtok(argv, delim);
-	cmd[num++] = temp;
-	while((temp = strtok(NULL, delim)))
-	{
-		cmd[num] = temp;
-//		printf("this is %d :%s\n", num, cmd[num]);
-		num++;
-	}
-//	printf("this argv: %s\n", cmd[0]);
-	printf("\n");
-	return argv;
-}
-
-int test()
-{
-	int i = 0;
-	for(; i<4; i++)
-		printf("cmd[%d]:%s \n", i, cmd[i]);
-}
+#include"h/stringtool.h"
+#include"h/readfile.h"
 
 int main(int argc, char *argv[])
 {
+	char *cmd[4];
 	if(argc != 2 || argc > 2)
 	{
 		printf("Error! The format is not right! \n");
@@ -38,8 +15,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		GetCmd(argv[1]);
+		GetCmd(argv[1], cmd);
 	}
-	test();
+	readfile();
 	return 0;
 }

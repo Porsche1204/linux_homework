@@ -1,4 +1,4 @@
-void ToUpper(char *str)
+void ToUpper(char *str);
 void ToUpper(char *str)
 {
 	while(*str)
