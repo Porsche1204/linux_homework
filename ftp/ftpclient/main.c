@@ -13,10 +13,7 @@ int main(int argc, char *argv[])
 		printf("Error! The format is not right! \n");
 		exit(EXIT_FAILURE);
 	}
-	else
-	{
-		GetCmd(argv[1], cmd);
-	}
+	GetCmd(argv[1], cmd);
 	readfile();
 	return 0;
 }
