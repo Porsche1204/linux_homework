@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	GetCmd(argv[1], cmd);
+//	printf("cmd[0] : %s", cmd[0]);
 	readfile();
 	return 0;
 }
