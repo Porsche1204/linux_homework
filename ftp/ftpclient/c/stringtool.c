@@ -10,10 +10,8 @@ void GetCmd(char *argv, char *cmd[])
 	while((temp = strtok(NULL, delim)))
 	{
 		cmd[num] = temp;
-//		printf("this is %d :%s\n", num, cmd[num]);
 		num++;
 	}
-//	printf("this argv: %s\n", cmd[0]);
 	printf("\n");
 }
 
